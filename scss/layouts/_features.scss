@@ -1,0 +1,40 @@
+.features{
+margin-bottom: 150px;
+   &__container{
+      display: flex;
+      gap: 28px;
+   }
+
+&__text-box{
+   margin: 0 auto;
+   margin-bottom: 80px;
+   max-width: 604px;
+   
+}
+
+&__text{
+   text-align: center;
+}
+
+   &__title{
+    text-transform: uppercase;
+    margin-bottom: 28px;
+    
+   }
+
+   &__info-box{
+      position: relative;
+      
+   }
+
+   
+
+   &__litle-box{
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: 1;
+   }
+
+   
+}

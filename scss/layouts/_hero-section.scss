@@ -1,0 +1,65 @@
+.hero-section{
+    margin-bottom: 100px;
+    
+
+    &__info{
+        margin-bottom: 85px;
+    }
+
+    &__title{
+        font-weight: 500;
+        font-size: 80px;
+        line-height: 1.1;
+        text-align: center;
+        margin-bottom: 18px;
+    }
+
+    &__text{
+       margin: 0 auto;
+       max-width: 604px;
+       text-align: center; 
+    }
+
+        &__links {
+        display: flex; 
+        gap: 35px;
+        justify-content: center;
+        margin-bottom: 35px; 
+        
+        
+     }
+ 
+    &__btn-try,
+    &__btn-more{
+        font-family: 'Rubik' , sans-serif ;
+        font-weight: 400;
+        font-size: 18px;
+        width: 178px;
+        height: 65px;
+        color: var(--light-main-color);
+        cursor: pointer;
+    }
+
+    
+
+    &__btn-try{
+        
+       border: 1px solid var(--primaty-blue);
+       background-color: var(--primaty-blue); 
+       
+    }
+
+    &__btn-more{
+        
+        border: 1px solid var(--light-main-color);
+        background-color: transparent;
+        
+    }
+
+        &__img {
+            width: 100%;
+            background-size: cover;
+        }
+ }
+
+    

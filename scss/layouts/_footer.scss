@@ -1,0 +1,66 @@
+.footer{
+    padding: 107px 224px;
+    margin: 0 auto;
+
+    &__container{
+        display: flex;
+        gap: 200px;
+        
+        
+    }
+
+    &__menu{
+        display: flex;
+        gap: 75px;
+    justify-content: space-between;    
+    }
+
+        &__menu-title{
+            margin-bottom: 40px;
+
+        }
+
+        &__menu-list{
+            font-size: 16px;
+            
+        }
+
+        &__list-item{
+            margin-bottom: 20px;
+
+            &:last-child{
+                margin-bottom: 0;   
+            }
+        }
+
+        
+
+        &__address-call{
+            display: flex;
+            flex-direction: column;
+            
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+
+        &__address-socials{
+            display: flex;
+            gap: 24px;
+        }
+
+        &__address-text{
+            font-size: 16px;
+            padding: 10px;
+            
+            
+        }
+
+        &__address-link{
+            display: flex;
+                align-items: center;
+                justify-content: left;
+
+        }
+}
+

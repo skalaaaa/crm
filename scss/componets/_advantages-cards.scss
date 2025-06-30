@@ -1,0 +1,29 @@
+.advantages-card{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 270px;
+    height: 196px;
+    margin-bottom: 150px;
+
+    &__icon{
+        fill: var(--secondary-green);
+    }
+
+    &__title-box{
+        display: flex;
+        gap: 10px;
+        align-items: center;    
+    }
+
+        
+
+    &__title{
+        font-weight: 500; 
+    }
+
+    &__text{
+        padding: 10px 10px;
+        font-size: 16px;  
+    }
+}

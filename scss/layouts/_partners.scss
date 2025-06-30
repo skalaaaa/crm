@@ -1,0 +1,42 @@
+.partners{
+    margin-bottom: 100px;
+
+    &__text-box{
+       margin-bottom: 50px; 
+    }
+
+    &__title{
+      margin-bottom: 10px;  
+    }
+
+    &__text{
+        width: 574px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+   
+
+    &__icons-partners{
+        display: flex;
+        gap: 74px;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 50px;
+
+    }
+
+    &__button{
+        display: block;
+            font-family: 'Rubik', sans-serif;
+            font-weight: 500;
+            font-size: 18px;
+            width: 178px;
+            height: 65px;
+            background-color: transparent;
+            border: 1px solid var(--light-main-color);
+            color: var(--light-main-color);
+            margin: 0 auto;
+            cursor: pointer;
+    }
+}

@@ -1,0 +1,44 @@
+.follow-section{
+    margin-bottom: 180px;
+
+    &__container{
+        display: flex;
+        width: 1220px;
+        height: 370px;
+        // box-shadow: 0 4px 31px 0 rgba(0, 0, 0, 0.15);
+        background-color: var(--follow-color);
+        border-radius: 20px;
+        border: 1px solid var(--follow-color);
+        
+
+    }
+
+    &__title{
+        font-weight: 400;
+            font-size: 52px;
+            line-height: 1.2;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            margin-bottom: 38px;
+    }
+
+    &__button{
+        font-family: 'Rubik' , sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        color: var(--light-main-color);
+        background-color: var(--primaty-blue);
+        padding: 13px 67px;
+        border: 1px solid var(--primaty-blue);
+        cursor: pointer;
+        
+    }
+
+    &__text-box{
+        padding: 78px 94px;
+    }
+
+    &__img{
+        border-radius: 0 0 20px 0;
+    }
+}

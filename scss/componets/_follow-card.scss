@@ -1,0 +1,60 @@
+.follow-card{
+
+    &__external-container{
+        display: flex;
+        gap: 33px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__card{
+        border-radius: 10px;
+    width:  476px;
+    height: 625px;
+    background-color: var(--light-main-color);}
+
+    &__title{
+        color: var(--secondary-black);
+        font-weight: 500;
+        margin-bottom: 20px;
+        text-align: center;
+
+    }
+
+    &__text{
+        color: var(--secondary-gray);
+        font-size: 16px;
+        font-weight: 400;
+        text-align: center;
+        width: 260px;
+        margin: 0 auto 68px;
+    }
+
+    &__button{
+        display: block;
+        margin: 0 auto ;
+        margin-bottom: 57px;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        width: 178px;
+        height: 65px;
+        color: var(--light-main-color);
+        border: 1px solid var(--primaty-blue);
+        background-color: var(--primaty-blue);
+        cursor: pointer;
+    }
+
+           &__button.margin{
+            margin-bottom: 0;
+        }
+
+        
+    &__internal-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 35px;
+    }
+}

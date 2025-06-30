@@ -1,0 +1,54 @@
+.testimonials-cards{
+    margin-bottom: 180px;
+
+    &__container{
+        display: flex;
+        // flex-basis: calc( ( 100% - 24px) / 2 ) ;
+        flex-wrap: wrap;
+        gap: 24px;
+        justify-content: space-between;
+          
+    }
+
+    &__list {
+        width: calc((100% - 24px) / 2);
+
+        &:last-child{
+            margin-top: -24px;
+        }
+    }
+
+        &__container:last-child {
+            margin-top: -15px;
+        }
+
+
+    &__card{
+        background-color: transparent;
+        border: 1px solid var(--light-main-color);
+        border-radius: 10px;
+        padding: 40px;
+        // max-width: 430px;
+    }
+
+    &__text-box{
+        display: flex;
+        gap: 14px;
+        margin-bottom: 32px;
+    }
+
+    &__text{
+      min-width: 320px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+        font-size: 16px;
+    }
+
+    &__name,
+    &__job{
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    
+}
