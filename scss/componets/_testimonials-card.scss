@@ -1,21 +1,44 @@
 .testimonials-cards{
-    margin-bottom: 180px;
+    margin-bottom: 100px;
 
     &__container{
-        display: flex;
-        // flex-basis: calc( ( 100% - 24px) / 2 ) ;
+        display: flex;   
         flex-wrap: wrap;
         gap: 24px;
-        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        @media screen and (min-width:$bp-tablet) {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
           
     }
 
     &__list {
-        width: calc((100% - 24px) / 2);
+        
+        display: none;
+        
 
-        &:last-child{
+        @media screen and (min-width:$bp-tablet) {
+            display: block;
+            width: calc((100% - 24px) / 2);  
+        }
+
+        &:nth-child(4){
             margin-top: -24px;
         }
+    }
+
+    &__list-mbl{
+        width: 352px;
+        height: 357px;
+
+        @media screen and (min-width:$bp-tablet) {
+            display: none;
+        }
+
     }
 
         &__container:last-child {
@@ -28,7 +51,7 @@
         border: 1px solid var(--light-main-color);
         border-radius: 10px;
         padding: 40px;
-        // max-width: 430px;
+        
     }
 
     &__text-box{
@@ -38,10 +61,14 @@
     }
 
     &__text{
-      min-width: 320px;
+      
     font-family: "Roboto", sans-serif;
     font-weight: 400;
         font-size: 16px;
+
+        @media screen and (min-width:$bp-tablet) {
+            max-width: 320px; 
+        }
     }
 
     &__name,

@@ -1,10 +1,22 @@
 .footer{
-    padding: 107px 224px;
+    padding: 107px 115px;
     margin: 0 auto;
+
+    @media screen and (min-width:$bp-desktop) {
+        padding: 107px 224px;
+    }
 
     &__container{
         display: flex;
-        gap: 200px;
+        gap: 75px;
+        flex-direction: column;
+        
+
+        @media screen and (min-width:$bp-desktop) {
+            flex-direction: row;
+            gap: 200px;
+        
+        }
         
         
     }
@@ -12,7 +24,13 @@
     &__menu{
         display: flex;
         gap: 75px;
-    justify-content: space-between;    
+        flex-direction: column;
+    
+    
+    @media screen and (min-width:$bp-desktop) {
+        justify-content: space-between; 
+        flex-direction: row;
+    }
     }
 
         &__menu-title{
@@ -38,9 +56,12 @@
         &__address-call{
             display: flex;
             flex-direction: column;
-            
             gap: 10px;
-            margin-bottom: 30px;
+            margin-bottom: 10px;
+
+            @media screen and (min-width:$bp-desktop) {
+                margin-bottom: 30px; 
+            }
         }
 
 

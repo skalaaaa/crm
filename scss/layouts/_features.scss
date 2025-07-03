@@ -1,14 +1,27 @@
 .features{
-margin-bottom: 150px;
-   &__container{
+margin-bottom: 100px;
+  
+&__container{
       display: flex;
       gap: 28px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      @media screen and (min-width:$bp-tablet) {
+         flex-direction: row;
+         align-items: flex-start;
+      }
    }
 
 &__text-box{
    margin: 0 auto;
-   margin-bottom: 80px;
+   margin-bottom: 27px;
    max-width: 604px;
+
+   @media screen and (min-width:$bp-tablet) {
+      margin-bottom: 80px; 
+   }
    
 }
 
@@ -17,13 +30,16 @@ margin-bottom: 150px;
 }
 
    &__title{
-    text-transform: uppercase;
-    margin-bottom: 28px;
     
-   }
+    margin-bottom: 28px;
+  
+    @media screen and (min-width:$bp-tablet) {
+   margin-bottom: 80px; 
+   }}
 
    &__info-box{
       position: relative;
+      margin-bottom: 67px;
       
    }
 
@@ -31,10 +47,41 @@ margin-bottom: 150px;
 
    &__litle-box{
       position: absolute;
-      bottom: 0;
-      right: 0;
+      bottom: -52px;
+      right: 40px;      
       z-index: 1;
+
+      @media screen and (min-width:$bp-tablet) {
+         right: 0;
+      }
    }
 
+   &__big-img{
+      
+      width: 324px;
+         height:319px;
+         @media screen and (min-width:$bp-tablet) {
+            width: 530px;
+               height: 530px;}
+
+      @media screen and (min-width:$bp-desktop) {
+         width: 696px;
+            height: 659px;
+   }}
+
+   &__little-img{
+      width: 232px;
+         height: 160px;
+
+         @media screen and (min-width:$bp-tablet) {
+            width: 289px;
+               height: 200px;
+            }
+
+         @media screen and (min-width:$bp-desktop) {
+            width: 400px;
+               height: 276px;  
+         }
+   }
    
 }

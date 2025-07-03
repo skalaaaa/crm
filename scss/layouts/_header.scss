@@ -1,14 +1,23 @@
 .header{
-    padding: 33px 0;
-    margin-bottom: 85px;
+    padding: 25px ;
+    margin-bottom: 57px;
+
+    @media screen and (min-width:$bp-tablet) {
+        padding: 30px ;
+        margin-bottom: 85px;
+    }
     
     &__container{
         display: flex;
         justify-content: space-between;
         max-width: 1117px;
         width: 100%;
-        padding: 0 20px;
+       
         margin: 0 auto;
+        align-items: center;
+
+        
+        
     }
 
     &__logo{
@@ -17,14 +26,27 @@
     }
 
     &__menu{
-        display: flex;
-        gap: 32px;
-        align-items:center;
-        justify-content: center;
-        text-align: center;
-        font-size: 16px;
-        font-weight: 500;
         
+        display: none;
+
+        @media screen and (min-width:$bp-tablet) {
+            display: block;
+            display: flex;
+                gap: 32px;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                font-size: 16px;
+                font-weight: 500;
+                
+        }
+        
+    }
+
+        &__btn-container{
+        display: flex;
+        align-items: center;
+        gap: 16px;
     }
 
         &__button{
@@ -38,5 +60,14 @@
       width: 139px;
       height: 52px;
       cursor: pointer;
+    }
+
+    &__burger{
+        background-color: transparent;
+        border: none;
+
+        @media screen and (min-width:$bp-tablet) {
+           display: none; 
+        }
     }
 }

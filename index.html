@@ -9,7 +9,7 @@
 <body>
     <header class="header">
        <div class="header__container">
-        <a class="header__logo" href="#"><img  src="./image/logo-dark.svg" alt="Logo"></a>
+        <a  href="#"><img class="header__logo" src="./image/logo-dark.svg" alt="Logo"></a>
     
             <ul class="header__menu">
                 <li class="header__link"><a href="#">Home</a></li>
@@ -18,7 +18,25 @@
                 <li class="header__link"><a href="#">Contact</a></li>
             </ul>
         
-        <button class="header__button" type="button">Login</button>
+        <div class="header__btn-container">
+            <button class="header__button" type="button">Login</button>
+            <button class="header__burger menu-btn-open" type="button">
+                <svg width="66" height="53">
+                    <use href="./image/icons.svg#icon-burger"> </use>
+                </svg>
+            </button>
+        </div>
+        <div class="mobile-menu">
+            <ul class="mobile-menu__menu">
+                <li class="mobile-menu__link-text"><a href="#">Home</a></li>
+                <li class="mobile-menu__link-text"><a href="#">Product</a></li>
+                <li class="mobile-menu__link-text"><a href="#">About</a></li>
+                <li class="mobile-menu__link-text"><a href="#">Contact</a></li>
+            </ul>
+            <button class="mobile-menu__btn-close menu-btn-close" type="button">
+              <img src="./image/close-mbl-btn.png"> 
+            </button>
+        </div>
        </div>
     </header>
     <main>
@@ -57,7 +75,7 @@
                         </div>
                     </div>
                     <ul class="advantages-card">
-                        <li>
+                        <li class="advantages-card__item">
                             <article>
                                 <div class="advantages-card__title-box" ><svg class="advantages-card__icon" width="32" height="66">
                                     <use href="./image/icons.svg#icon-restaurant-menu"> </use>
@@ -69,7 +87,7 @@
                                 </p>
                             </article>
                         </li>
-                        <li>
+                        <li class="advantages-card__item">
                             <article>
                                 <div class="advantages-card__title-box">
                                     <svg class="advantages-card__icon" width="33" height="60" >
@@ -82,7 +100,7 @@
                                 </p>
                             </article>
                         </li>
-                        <li>
+                        <li class="advantages-card__item">
                             <article>
                                 <div class="advantages-card__title-box">
                                     <svg class="advantages-card__icon" width="41" height="53" >
@@ -119,7 +137,7 @@
                                             on a client for work? Slate helps you identify .</p>
                                     </div>
                                     <button class="follow-card__button" type="button">Sign Up</button>
-                                    <img  src="./image/follow-card-mac-book.png" alt="Mac book">
+                                    <img  class="follow-card__img-mac" src="./image/follow-card-mac-book.png" alt="Mac book">
                                 </div>
                             </article>
                         </li>
@@ -132,7 +150,7 @@
                                             on a client for work? Slate helps you identify .</p>
                                     </div>
                                     <button class="follow-card__button margin" type="button">Try For Free</button>
-                                    <img  src="./image/follow-card-notification.png" alt="Notification">
+                                    <img class="follow-card__img-notification" src="./image/follow-card-notification.png" alt="Notification">
                                 </div>
                             </article>
                         </li>
@@ -147,13 +165,18 @@
                     <p class="gallery__text">We focus on ergonomics and meeting you where you work.
                         It's only a keystroke away.</p>
                         <div class="gallery__photo-box">
-                          <img src="./image/gallery-card1.png" alt="">
-                          <img src="./image/gallery-card2.png" alt="">
-                          <img src="./image/gallery-card3.png" alt="">
-                          <img src="./image/gallery-card4.png" alt="">
-                          <img src="./image/gallery-card5.png" alt="">
-                          <img src="./image/gallery-card6.png" alt="">
-                          <img src="./image/gallery-card7.png" alt="">  
+                          <img class="gallery__item" src="./image/gallery-card1.png" alt="Photo 1">
+                          <img class="gallery__item" src="./image/gallery-card2.png" alt="Photo 2">
+                          <img class="gallery__item" src="./image/gallery-card3.png" alt="Photo 3">
+                          <img class="gallery__item" src="./image/gallery-card4.png" alt="Photo 4">
+                          <img class="gallery__item" src="./image/gallery-card5.png" alt="Photo 5">
+                          <img class="gallery__item" src="./image/gallery-card6.png" alt="Photo 6">
+                          <img class="gallery__item " src="./image/gallery-card7.png" alt="Photo 7">
+                          <img class="gallery__item-mbl" src="./image/gallery-card1-mbl.png" alt="Photo 1">
+                          <img class="gallery__item-mbl" src="./image/gallery-card2-mbl.png" alt="Photo 2">
+                          <img class="gallery__item-mbl" src="./image/gallery-card3-mbl.png" alt="Photo 3">
+                          <img class="gallery__item-mbl " src="./image/gallery-card4-mbl.png" alt="Photo 4">
+
                         </div>
                         <button class="gallery__button" type="button">See more</button>
                 </div>
@@ -193,6 +216,8 @@
                     <h2 class="testimonials__title section__title">Testimonials</h2>
                     <div class="testimonials-cards">
                         <ul class="testimonials-cards__container">
+                            
+
                             <li class="testimonials-cards__list">
                                 <article class="testimonials-cards__card">
                                     <div class="testimonials-cards__text-box">
@@ -255,6 +280,84 @@
                                     you need to work to reach your financial goal for the month and year.</p>
                                 </article>
                             </li>
+                            
+
+                            <li class="testimonials-cards__list-mbl">
+                                <article class="testimonials-cards__card">
+                                    <div class="testimonials-cards__text-box">
+                                        <img src="./image/avatar-wade-steward-mbl.png" alt="Avatar Wade Steward">
+                                        <div>
+                                            <h5 class="testimonials-cards__name">Wade Steward</h5>
+                                            <h6 class="testimonials-cards__job">Designer</h6>
+                                        </div>
+                                    </div>
+                                    <p class="testimonials-cards__text">Slate helps you see how many
+                                        more days you need to work to
+                                        reach your financial goal for the
+                                        month and year. Slate helps
+                                        you see how many more days
+                                        you need to work to reach your
+                                        financial goal for the month and
+                                        year.your financial goal for the month and year.</p>
+                                </article>
+                            </li>
+                            <li class="testimonials-cards__list-mbl">
+                                <article class="testimonials-cards__card">
+                                    <div class="testimonials-cards__text-box">
+                                        <img src="./image/avatar-philip-watson-mbl.png" alt="Avatar Philip Watson">
+                                        <div>
+                                            <h5 class="testimonials-cards__name">Philip Watson</h5>
+                                            <h6 class="testimonials-cards__job">Designer</h6>
+                                        </div>
+                                    </div>
+                                    <p class="testimonials-cards__text">Slate helps you see how many
+                                        more days you need to work to
+                                        reach your financial goal for the
+                                        month and year. Slate helps
+                                        you see how many more days
+                                        you need to work to reach your
+                                        financial goal for the month and
+                                        year.your financial goal for the month and year.</p>
+                                </article>
+                            </li>
+
+                            <li class="testimonials-cards__list-mbl">
+                                <article class="testimonials-cards__card">
+                                    <div class="testimonials-cards__text-box">
+                                        <img src="./image/avatar-francisco-lane.png" alt="Avatar Arthur Wilson">
+                                        <div>
+                                            <h5 class="testimonials-cards__name">Arthur Wilson</h5>
+                                            <h6 class="testimonials-cards__job">Designer</h6>
+                                        </div>
+                                    </div>
+                                    <p class="testimonials-cards__text">Slate helps you see how many
+                                    more days you need to work to
+                                    reach your financial goal for the
+                                    month and year. Slate helps
+                                    you see how many more days
+                                    you need to work to reach your
+                                    financial goal for the month and
+                                    year.your financial            goal for the month and year.</p>
+                                </article>
+                            </li>
+                            
+                            <li class="testimonials-cards__list-mbl">
+                                <article class="testimonials-cards__card">
+                                    <div class="testimonials-cards__text-box">
+                                    <img src="./image/avatar-regina-black-mbl.png" alt="Avatar Regina Black">
+                                    <div><h5 class="testimonials-cards__name">Regina Black</h5>
+                                    <h6 class="testimonials-cards__job">Designer</h6></div>
+                                </div>
+                                    <p class="testimonials-cards__text">Slate helps you see how many
+                                    more days you need to work to
+                                    reach your financial goal for the
+                                    month and year. Slate helps
+                                    you see how many more days
+                                    you need to work to reach your
+                                    financial goal for the month and
+                                    year.your financial            goal for the month and year.</p>
+                                </article>
+                            </li>
                         </ul>
 
                     </div>
@@ -266,6 +369,7 @@
                         <div class="follow-section__text-box"><h2 class="follow-section__title">OpenType features and Variable fonts</h2>
                         <button class="follow-section__button" type="button">Try For Free</button></div>
                         <img class="follow-section__img" src="./image/follow-img.png" alt="Join us">
+                        <img class="follow-section__img-mbl" src="./image/follow-img-mbl.png" alt="Join us">
 
                     </div>
                 </div>
@@ -334,5 +438,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="./js/mobile-menu.js" ></script>
 </body>
 </html>

@@ -3,15 +3,25 @@
     
 
     &__info{
-        margin-bottom: 85px;
+        margin-bottom: 57px;
+
+        @media screen and (min-width:$bp-tablet) {
+        margin-bottom: 85px;}
     }
 
     &__title{
+        font-weight: 400;
         font-weight: 500;
-        font-size: 80px;
+        font-size: 52px;
         line-height: 1.1;
         text-align: center;
-        margin-bottom: 18px;
+        margin-bottom: 7px;
+
+        @media screen and (min-width:$bp-tablet) {
+            font-size: 80px;
+            font-weight: 500;
+            margin-bottom: 18px;
+        }
     }
 
     &__text{
@@ -22,9 +32,19 @@
 
         &__links {
         display: flex; 
-        gap: 35px;
+        gap: 21px;
         justify-content: center;
-        margin-bottom: 35px; 
+        margin-bottom: 57px;
+        flex-direction: column;
+        
+        
+        
+        @media screen and (min-width:$bp-tablet) {
+            flex-direction: row;
+            gap: 35px; 
+            margin-bottom: 35px;
+
+        }
         
         
      }
@@ -38,6 +58,12 @@
         height: 65px;
         color: var(--light-main-color);
         cursor: pointer;
+        display: block;
+        margin: 0 auto;
+
+        @media screen and (min-width:$bp-tablet) {
+            margin: 0;
+        }
     }
 
     

@@ -5,13 +5,26 @@
         gap: 33px;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
+
+        @media screen and (min-width:$bp-desktop) {
+           flex-direction: row; 
+        }
     }
 
     &__card{
         border-radius: 10px;
-    width:  476px;
-    height: 625px;
-    background-color: var(--light-main-color);}
+        background-color: var(--light-main-color);
+        width: 353px;
+        height: 578px;
+
+    @media screen and (min-width:$bp-desktop) {
+        width: 476px;
+            height: 625px;  
+    }
+
+
+}
 
     &__title{
         color: var(--secondary-black);
@@ -37,8 +50,8 @@
         font-family: 'Rubik', sans-serif;
         font-weight: 400;
         font-size: 18px;
-        width: 178px;
-        height: 65px;
+        width: 190px;
+        height: 52px;
         color: var(--light-main-color);
         border: 1px solid var(--primaty-blue);
         background-color: var(--primaty-blue);
@@ -46,7 +59,11 @@
     }
 
            &__button.margin{
-            margin-bottom: 0;
+            margin-bottom: 20px;
+
+            @media screen and (min-width:$bp-desktop) {
+                margin-bottom:0;  
+            }
         }
 
         
@@ -57,4 +74,24 @@
         align-items: center;
         padding: 40px 35px;
     }
+
+    &__img-mac{
+        width: 298px;
+        height: 175px;
+
+        @media screen and (min-width:$bp-desktop) {
+            width: 405px;
+                height: 227px;  
+        }
+    }
+
+   &__img-notification{
+    width: 360px;
+        height: 270px;
+    
+        @media screen and (min-width:$bp-desktop) {
+            width: 442px;
+            height: 339px;
+        }
+   }
 }
