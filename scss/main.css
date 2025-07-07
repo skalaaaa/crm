@@ -654,13 +654,14 @@ img {
   align-items: center;
   border-radius: 0;
   flex-direction: column;
-  width: 510px;
+  max-width: 510px;
   height: 568px;
   margin: 0 auto;
   text-align: center;
 }
 @media screen and (min-width: 1200px) {
   .follow-section__container {
+    max-width: none;
     width: 1220px;
     height: 370px;
     text-align: left;
